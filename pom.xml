@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>kr.co.linkhub</groupId>
+    <artifactId>popbill-spring-boot</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <name>POPBiLL SpringBoot</name>
+    <description>POPBiLL SpringBoot SDK</description>
+    <properties>
+        <revision>0.0.2-SNAPSHOT</revision>
+        <popbill-sdk.version>1.50.0</popbill-sdk.version>
+    </properties>
+
+    <modules>
+        <module>popbill-spring-boot-starter</module>
+        <module>popbill-spring-boot-autoconfigure</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>kr.co.linkhub</groupId>
+                <artifactId>popbill-sdk</artifactId>
+                <version>${popbill-sdk.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>kr.co.linkhub</groupId>
+                <artifactId>popbill-spring-boot-autoconfigure</artifactId>
+                <version>${revision}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

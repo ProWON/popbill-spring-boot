@@ -1,0 +1,5 @@
+kr\co\linkhub\autoconfigure\properties\TaxinvoiceProperties.class
+kr\co\linkhub\autoconfigure\properties\CashbillProperties.class
+kr\co\linkhub\autoconfigure\TaxinvoiceAutoConfiguration.class
+kr\co\linkhub\autoconfigure\CashbillAutoConfiguration.class
+META-INF\spring-configuration-metadata.json
