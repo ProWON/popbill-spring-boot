@@ -4,13 +4,41 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>kr.co.linkhub</groupId>
     <artifactId>popbill-spring-boot</artifactId>
-    <version>${revision}</version>
+    <version>0.0.3</version>
     <packaging>pom</packaging>
     <name>POPBiLL SpringBoot</name>
     <description>POPBiLL SpringBoot SDK</description>
+    <url>http://www.popbill.com</url>
+
+    <scm>
+        <connection>scm:git:git@github.com/ProWON/popbill-spring-boot.git
+        </connection>
+        <url>git@github.com/ProWON/popbill-spring-boot.git</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    
+    <developers>
+        <developer>
+            <name>Kim Won Jae</name>
+            <email>wjkim@linkhub.co.kr</email>
+            <organization>Linkhub</organization>
+            <organizationUrl>https://www.linkhub.co.kr</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <properties>
-        <revision>0.0.2-SNAPSHOT</revision>
-        <popbill-sdk.version>1.50.0</popbill-sdk.version>
+        <popbill-sdk.version>1.50.1</popbill-sdk.version>
+        <popbill-autoconfigure.version>0.0.3</popbill-autoconfigure.version>
     </properties>
 
     <modules>
@@ -29,7 +57,7 @@
             <dependency>
                 <groupId>kr.co.linkhub</groupId>
                 <artifactId>popbill-spring-boot-autoconfigure</artifactId>
-                <version>${revision}</version>
+                <version>${popbill-autoconfigure.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

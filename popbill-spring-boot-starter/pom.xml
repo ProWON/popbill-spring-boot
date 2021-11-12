@@ -6,17 +6,12 @@
     <parent>
         <groupId>kr.co.linkhub</groupId>
         <artifactId>popbill-spring-boot</artifactId>
-        <version>${revision}</version>
-
+        <version>0.0.3</version>
     </parent>
 
     <artifactId>popbill-spring-boot-starter</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>kr.co.linkhub</groupId>
-            <artifactId>popbill-sdk</artifactId>
-        </dependency>
         <dependency>
             <groupId>kr.co.linkhub</groupId>
             <artifactId>popbill-spring-boot-autoconfigure</artifactId>

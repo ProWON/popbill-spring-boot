@@ -1,7 +1,5 @@
 package kr.co.linkhub.autoconfigure;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -22,13 +20,10 @@ public class CashbillAutoConfiguration {
     @Autowired
     private CashbillProperties cashbillProperties;
 
-    private static final Logger logger = LoggerFactory.getLogger(CashbillAutoConfiguration.class);
-
     @Lazy
     @Bean(name = "CashbillService")
     @ConditionalOnMissingBean
     public CashbillService CashbillServiceConfig() {
-        logger.info("POPBiLL Initializing CashbillService");
         CashbillService cashbillService;
 
         CashbillServiceImp cashbillServiceImp = new CashbillServiceImp();

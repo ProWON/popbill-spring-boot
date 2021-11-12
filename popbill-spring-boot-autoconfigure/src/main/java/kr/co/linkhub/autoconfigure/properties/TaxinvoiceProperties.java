@@ -1,15 +1,9 @@
 package kr.co.linkhub.autoconfigure.properties;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-//configuration processor는 @ConfigurationProperties를 가지고 있는 모든 클래스와 메소드를 스캔함
-//이를 통해서 configuration parameter에 접근하고 ,configuraton metadata를 생성함
 @ConfigurationProperties(prefix = "popbill.taxinvoice")
 public class TaxinvoiceProperties {
-    private static final Log logger = LogFactory.getLog(TaxinvoiceProperties.class);
-
     private String linkid;
     private String secretkey;
     private boolean isTest;

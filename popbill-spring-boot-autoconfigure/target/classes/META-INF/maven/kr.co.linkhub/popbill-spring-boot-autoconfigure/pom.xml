@@ -6,33 +6,26 @@
     <parent>
         <groupId>kr.co.linkhub</groupId>
         <artifactId>popbill-spring-boot</artifactId>
-        <version>${revision}</version>
+        <version>0.0.3</version>
         <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>popbill-spring-boot-autoconfigure</artifactId>
     <name>popbill-spring-boot-autoconfigure</name>
     <description>POPBiLL AutoConfigure</description>
+    
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.5.6</version>
+            <version>1.5.22.RELEASE</version>
         </dependency>
         
          <dependency>
             <groupId>kr.co.linkhub</groupId>
             <artifactId>popbill-sdk</artifactId>
-            <optional>true</optional>
         </dependency>
         
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.32</version>
-            <optional>true</optional>
-        </dependency>
-       
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -40,35 +33,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.5.6</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.2</version>
-             </plugin>
-             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-             </plugin>
-             <plugin>
-                <groupId>org.apache.maven.surefire</groupId>
-                <artifactId>maven-surefire-common</artifactId>
-                <version>2.22.2</version>
-             </plugin>
-             <plugin>
-                <groupId>org.apache.maven.reporting</groupId>
-                <artifactId>maven-reporting-api</artifactId>
-                <version>3.0</version>
-             </plugin>
-        </plugins>
-    </build>
 
 </project>
